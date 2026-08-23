@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+  * {
+    direction: rtl;
+    font-family: 'Vazirmatn', system-ui, sans-serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-white text-charcoal-800 antialiased;
+    font-feature-settings: 'kern' 1;
+  }
+
+  :focus-visible {
+    @apply outline-2 outline-navy-600 outline-offset-2;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3 bg-navy-800 text-white font-semibold rounded-lg transition-colors duration-200 hover:bg-navy-700 focus-visible:outline-2 focus-visible:outline-navy-600 active:bg-navy-900 disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3 bg-white text-navy-800 font-semibold rounded-lg border-2 border-navy-800 transition-colors duration-200 hover:bg-navy-50 focus-visible:outline-2 focus-visible:outline-navy-600 active:bg-navy-100 disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  .btn-whatsapp {
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3 bg-green-600 text-white font-semibold rounded-lg transition-colors duration-200 hover:bg-green-700 focus-visible:outline-2 focus-visible:outline-green-600 active:bg-green-800;
+  }
+
+  .btn-telegram {
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3 bg-sky-500 text-white font-semibold rounded-lg transition-colors duration-200 hover:bg-sky-600 focus-visible:outline-2 focus-visible:outline-sky-500 active:bg-sky-700;
+  }
+
+  .btn-phone {
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3 bg-accent-600 text-white font-semibold rounded-lg transition-colors duration-200 hover:bg-accent-700 focus-visible:outline-2 focus-visible:outline-accent-600 active:bg-accent-800;
+  }
+
+  .section-title {
+    @apply text-2xl md:text-3xl font-bold text-navy-900;
+  }
+
+  .section-subtitle {
+    @apply text-charcoal-500 mt-2 text-base md:text-lg;
+  }
+
+  .card {
+    @apply bg-white rounded-xl border border-industrial-200 shadow-sm hover:shadow-md transition-shadow duration-200;
+  }
+
+  .badge-available {
+    @apply inline-flex items-center gap-1.5 px-3 py-1 bg-accent-50 text-accent-700 text-sm font-semibold rounded-full border border-accent-200;
+  }
+
+  .badge-unavailable {
+    @apply inline-flex items-center gap-1.5 px-3 py-1 bg-red-50 text-red-700 text-sm font-semibold rounded-full border border-red-200;
+  }
+
+  .input-field {
+    @apply w-full px-4 py-3 border border-industrial-300 rounded-lg bg-white text-charcoal-800 placeholder-charcoal-400 focus:outline-none focus:ring-2 focus:ring-navy-600 focus:border-transparent transition-colors text-right;
+  }
+
+  .label {
+    @apply block text-sm font-semibold text-charcoal-700 mb-1.5;
+  }
+
+  .admin-card {
+    @apply bg-white rounded-xl border border-industrial-200 shadow-sm p-6;
+  }
+}
