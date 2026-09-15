@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" fill="none">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad140" x1="0" y1="0" x2="800" y2="500" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stopColor="#1C1917"/>
+      <stop offset="50%" stopColor="#1E293B"/>
+      <stop offset="100%" stopColor="#0F172A"/>
+    </linearGradient>
+
+    <!-- Slab Wax Gradients (Slightly warmer industrial tone) -->
+    <linearGradient id="slabTop140" x1="200" y1="180" x2="600" y2="280" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stopColor="#FFFBEB"/>
+      <stop offset="60%" stopColor="#F8FAFC"/>
+      <stop offset="100%" stopColor="#E2E8F0"/>
+    </linearGradient>
+
+    <linearGradient id="slabFront140" x1="200" y1="280" x2="600" y2="400" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stopColor="#CBD5E1"/>
+      <stop offset="50%" stopColor="#94A3B8"/>
+      <stop offset="100%" stopColor="#64748B"/>
+    </linearGradient>
+
+    <linearGradient id="slabSide140" x1="150" y1="250" x2="250" y2="380" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stopColor="#94A3B8"/>
+      <stop offset="100%" stopColor="#475569"/>
+    </linearGradient>
+
+    <!-- High Temp Flame Accent -->
+    <linearGradient id="amberFlame" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stopColor="#F59E0B"/>
+      <stop offset="100%" stopColor="#DC2626"/>
+    </linearGradient>
+
+    <!-- Subtle Shadow -->
+    <filter id="slabShadow140" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="25" stdDeviation="20" flood-color="#000000" flood-opacity="0.7"/>
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="800" height="500" fill="url(#bgGrad140)"/>
+
+  <!-- Technical Grid Pattern -->
+  <g opacity="0.08" stroke="#F59E0B" stroke-width="1">
+    <line x1="0" y1="100" x2="800" y2="100"/>
+    <line x1="0" y1="200" x2="800" y2="200"/>
+    <line x1="0" y1="300" x2="800" y2="300"/>
+    <line x1="0" y1="400" x2="800" y2="400"/>
+    <line x1="200" y1="0" x2="200" y2="500"/>
+    <line x1="400" y1="0" x2="400" y2="500"/>
+    <line x1="600" y1="0" x2="600" y2="500"/>
+  </g>
+
+  <!-- High Temp Radiant Glow Behind Wax -->
+  <circle cx="400" cy="270" r="190" fill="#F59E0B" opacity="0.1"/>
+
+  <!-- Base Shadow -->
+  <ellipse cx="400" cy="385" rx="270" ry="45" fill="#000000" opacity="0.5" filter="blur(10px)"/>
+
+  <!-- Main Wax Block -->
+  <g filter="url(#slabShadow140)">
+    <!-- Slab Top Face -->
+    <polygon points="400,160 630,230 400,300 170,230" fill="url(#slabTop140)"/>
+    <!-- Slab Right/Front Face -->
+    <polygon points="400,300 630,230 630,330 400,400" fill="url(#slabFront140)"/>
+    <!-- Slab Left Face -->
+    <polygon points="170,230 400,300 400,400 170,330" fill="url(#slabSide140)"/>
+  </g>
+
+  <!-- Wax Surface Crystal Texture Lines -->
+  <g opacity="0.3" stroke="#FBBF24" stroke-width="1.2">
+    <line x1="330" y1="210" x2="470" y2="255"/>
+    <line x1="270" y1="235" x2="370" y2="265"/>
+    <line x1="430" y1="215" x2="530" y2="250"/>
+  </g>
+
+  <!-- Embossed Brand Badge on Wax Top -->
+  <g transform="translate(360, 205) skewX(-45) scale(1, 0.5)" opacity="0.4">
+    <circle cx="40" cy="40" r="32" stroke="#78350F" stroke-width="3" fill="none"/>
+    <text x="40" y="46" font-family="'Segoe UI', sans-serif" font-size="12" font-weight="900" fill="#78350F" text-anchor="middle">PARS EXIR</text>
+  </g>
+
+  <!-- Premium Industrial Spec Badge (Floating Top Right) -->
+  <g transform="translate(540, 50)">
+    <rect width="210" height="75" rx="12" fill="#1E293B" stroke="#B45309" stroke-width="1.5"/>
+    <rect x="10" y="10" width="6" height="55" rx="3" fill="url(#amberFlame)"/>
+    <text x="26" y="32" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="700" fill="#FBBF24" letter-spacing="1">HEAVY DUTY GRADE</text>
+    <text x="26" y="58" font-family="'Segoe UI', sans-serif" font-size="22" font-weight="900" fill="#FFFFFF">FLASH 140°C</text>
+  </g>
+
+  <!-- Arabic / Persian Label (Floating Top Left) -->
+  <g transform="translate(50, 50)">
+    <rect width="210" height="75" rx="12" fill="#1E293B" stroke="#334155" stroke-width="1.5"/>
+    <circle cx="35" cy="37" r="16" fill="#F59E0B" opacity="0.2"/>
+    <circle cx="35" cy="37" r="8" fill="#F59E0B"/>
+    <text x="62" y="34" font-family="'Vazirmatn', sans-serif" font-size="16" font-weight="800" fill="#FFFFFF">پارافین فلش ۱۴۰</text>
+    <text x="62" y="55" font-family="'Vazirmatn', sans-serif" font-size="11" font-weight="500" fill="#FBBF24">پایداری حرارتی بالا • صنایع سنگین</text>
+  </g>
+
+  <!-- Bottom Brand Ribbon -->
+  <rect x="0" y="470" width="800" height="30" fill="#0A0A0A"/>
+  <text x="400" y="490" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="700" fill="#78716C" text-anchor="middle" letter-spacing="2">PARS EXIR INDUSTRIAL PARAFFIN WAX — KASHAN, IRAN</text>
+</svg>

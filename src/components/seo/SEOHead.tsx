@@ -51,6 +51,10 @@ export function SEOHead({
       <title>{fullTitle}</title>
       <meta name="description" content={metaDescription} />
       {canonicalUrl && <link rel="canonical" href={canonicalUrl} />}
+      <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+      <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+      <link rel="shortcut icon" href="/favicon.ico" />
+      <link rel="apple-touch-icon" href="/favicon.svg" />
       {noIndex ? (
         <meta name="robots" content="noindex,nofollow" />
       ) : (
@@ -107,6 +111,13 @@ export const organizationSchema = {
   alternateName: 'PARS EXIR',
   description: 'تأمین‌کننده پارافین صنعتی فلش ۱۲۰ و فلش ۱۴۰ در کاشان',
   url: BASE_URL,
+  logo: {
+    '@type': 'ImageObject',
+    url: `${BASE_URL}/logo.svg`,
+    width: 320,
+    height: 80,
+  },
+  image: `${BASE_URL}/logo.svg`,
   telephone: '+989133628681',
   address: {
     '@type': 'PostalAddress',

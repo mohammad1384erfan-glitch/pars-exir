@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <linearGradient id="favNavy" x1="0" y1="0" x2="64" y2="64" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stopColor="#1E3E62"/>
+      <stop offset="100%" stopColor="#0B192C"/>
+    </linearGradient>
+    <linearGradient id="favGold" x1="15" y1="10" x2="49" y2="54" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stopColor="#FDE047"/>
+      <stop offset="50%" stopColor="#F59E0B"/>
+      <stop offset="100%" stopColor="#D97706"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Hexagon Container -->
+  <polygon points="32,2 58,17 58,47 32,62 6,47 6,17" fill="url(#favNavy)" stroke="#F59E0B" stroke-width="2.5" stroke-linejoin="round"/>
+  
+  <!-- Droplet / Flame Symbol -->
+  <path d="M32 10 C32 10 46 28 46 38 C46 46 39.7 52 32 52 C24.3 52 18 46 18 38 C18 28 32 10 32 10 Z" fill="url(#favGold)"/>
+  
+  <!-- Core Highlight -->
+  <path d="M32 20 C32 20 39 30 39 37 C39 41 35.8 44 32 44 C28.2 44 25 41 25 37 C25 30 32 20 32 20 Z" fill="#FFFFFF" opacity="0.85"/>
+  <circle cx="32" cy="36" r="3" fill="#D97706"/>
+</svg>

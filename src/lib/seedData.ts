@@ -23,7 +23,7 @@ export const DEFAULT_PRODUCTS: Product[] = [
     flash_point: 120,
     price: 1050000,
     stock_quantity: 100,
-    image_url: null,
+    image_url: '/images/products/paraffin-flash-120.svg',
     specifications: {
       'نقطه اشتعال': 'حداقل ۱۲۰ درجه سانتیگراد',
       'حالت فیزیکی': 'جامد قالبی / تخته‌ای',
@@ -51,7 +51,7 @@ export const DEFAULT_PRODUCTS: Product[] = [
     flash_point: 140,
     price: 1150000,
     stock_quantity: 80,
-    image_url: null,
+    image_url: '/images/products/paraffin-flash-140.svg',
     specifications: {
       'نقطه اشتعال': 'حداقل ۱۴۰ درجه سانتیگراد',
       'حالت فیزیکی': 'جامد تخته‌ای صنعتی',
