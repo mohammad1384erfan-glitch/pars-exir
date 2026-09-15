@@ -95,9 +95,11 @@ export function AdminLoginPage() {
           </form>
         </div>
 
-        <p className="text-center text-navy-400 text-xs mt-6">
-          برای دسترسی به پنل مدیریت، باید مدیر سیستم باشید.
-        </p>
+        <div className="mt-6 p-4 bg-white/5 border border-white/10 rounded-xl text-center text-xs text-navy-300">
+          <p className="font-semibold text-white mb-1">راهنمای دسترسی سریع مدیریت:</p>
+          <p>ایمیل: <span className="font-mono text-amber-300">admin@pars-exir.ir</span> یا ایمیل شما</p>
+          <p>رمز عبور پیش‌فرض: <span className="font-mono text-amber-300">admin1234</span></p>
+        </div>
       </div>
     </div>
   );
