@@ -9,10 +9,10 @@ const NAV_ITEMS = [
   { label: 'پارافین صنعتی', href: '/industrial-paraffin' },
   { label: 'محصولات', href: '/products' },
   { label: 'قیمت‌ها', href: '/paraffin-price' },
+  { label: 'فروش عمده', href: '/wholesale-paraffin' },
   { label: 'انواع پارافین', href: '/paraffin-types' },
   { label: 'کاربردها', href: '/applications' },
   { label: 'مقالات', href: '/articles' },
-  { label: 'درباره ما', href: '/about' },
   { label: 'تماس با ما', href: '/contact' },
 ];
 

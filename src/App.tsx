@@ -15,6 +15,7 @@ import { ParaffinPricePage } from '@/pages/ParaffinPricePage';
 import { ParaffinKashanPage } from '@/pages/ParaffinKashanPage';
 import { ParaffinTypesPage } from '@/pages/ParaffinTypesPage';
 import { BuyingGuidePage } from '@/pages/BuyingGuidePage';
+import { WholesaleParaffinPage } from '@/pages/WholesaleParaffinPage';
 import { ApplicationsPage } from '@/pages/ApplicationsPage';
 import { ArticlesPage } from '@/pages/ArticlesPage';
 import { ArticleDetailPage } from '@/pages/ArticleDetailPage';
@@ -48,6 +49,7 @@ export default function App() {
                 <Route path="/paraffin-kashan" element={<ParaffinKashanPage />} />
                 <Route path="/paraffin-types" element={<ParaffinTypesPage />} />
                 <Route path="/buying-guide" element={<BuyingGuidePage />} />
+                <Route path="/wholesale-paraffin" element={<WholesaleParaffinPage />} />
                 <Route path="/applications" element={<ApplicationsPage />} />
                 <Route path="/articles" element={<ArticlesPage />} />
                 <Route path="/articles/:slug" element={<ArticleDetailPage />} />

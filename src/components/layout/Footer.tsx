@@ -35,6 +35,7 @@ export function Footer() {
                 { label: 'پارافین صنعتی چیست؟', href: '/industrial-paraffin' },
                 { label: 'محصولات', href: '/products' },
                 { label: 'قیمت پارافین', href: '/paraffin-price' },
+                { label: 'فروش عمده پارافین', href: '/wholesale-paraffin' },
                 { label: 'انواع پارافین صنعتی', href: '/paraffin-types' },
                 { label: 'راهنمای خرید پارافین', href: '/buying-guide' },
                 { label: 'پارافین در کاشان', href: '/paraffin-kashan' },
