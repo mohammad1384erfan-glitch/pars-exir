@@ -53,10 +53,15 @@ export function ProductCard({ product }: ProductCardProps) {
         {/* Price and availability */}
         <div className="flex items-center justify-between mb-4 pt-3 border-t border-industrial-100">
           <div>
-            {status.available ? (
+            {status.available && product.price > 0 ? (
               <>
                 <p className="text-xs text-charcoal-400 mb-0.5">قیمت نقدی (هر کیلوگرم)</p>
                 <p className="text-xl font-bold text-navy-900">{formatPrice(product.price)}</p>
+              </>
+            ) : status.available ? (
+              <>
+                <p className="text-xs text-charcoal-400 mb-0.5">نرخ روز بازار</p>
+                <p className="text-base font-bold text-accent-700">تماس برای استعلام قیمت</p>
               </>
             ) : (
               <p className="text-sm text-charcoal-500">جهت اطلاع از زمان تأمین تماس بگیرید</p>

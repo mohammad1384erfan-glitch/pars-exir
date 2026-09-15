@@ -1,6 +1,7 @@
 import type { ReactNode } from 'react';
 import { NavLink, useNavigate } from 'react-router-dom';
 import { useAuth } from '@/lib/authContext';
+import { Logo } from '@/components/ui/Logo';
 
 const ADMIN_NAV = [
   { label: 'داشبورد', href: '/admin', icon: '📊', end: true },
@@ -24,12 +25,7 @@ export function AdminLayout({ children }: { children: ReactNode }) {
       <aside className="w-64 bg-navy-900 text-white flex flex-col fixed inset-y-0 right-0 z-40 hidden lg:flex">
         {/* Logo */}
         <div className="h-16 flex items-center px-6 border-b border-navy-700">
-          <div className="flex items-center gap-2">
-            <div className="w-8 h-8 bg-white/10 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-xs">PE</span>
-            </div>
-            <span className="text-white font-bold">پارس اکسیر</span>
-          </div>
+          <Logo size="sm" theme="dark" />
         </div>
 
         {/* Navigation */}

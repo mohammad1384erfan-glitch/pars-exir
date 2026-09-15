@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 80" fill="none">
+  <defs>
+    <linearGradient id="petroNavy" x1="10" y1="10" x2="70" y2="70" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stopColor="#1E3E62"/>
+      <stop offset="50%" stopColor="#0B192C"/>
+      <stop offset="100%" stopColor="#000000"/>
+    </linearGradient>
+    <linearGradient id="amberGold" x1="20" y1="15" x2="60" y2="65" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stopColor="#FDE047"/>
+      <stop offset="40%" stopColor="#F59E0B"/>
+      <stop offset="100%" stopColor="#D97706"/>
+    </linearGradient>
+    <linearGradient id="crystalSheen" x1="0" y1="0" x2="80" y2="80" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stopColor="#38BDF8" stop-opacity="0.8"/>
+      <stop offset="100%" stopColor="#0284C7" stop-opacity="0.2"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Emblem -->
+  <g transform="translate(10, 5)">
+    <polygon points="35,5 65,22 65,58 35,75 5,58 5,22" fill="url(#petroNavy)" stroke="#1E3E62" stroke-width="2.5" stroke-linejoin="round"/>
+    <polygon points="35,12 59,25 59,55 35,68 11,55 11,25" fill="none" stroke="url(#crystalSheen)" stroke-width="1.2" stroke-dasharray="3 2" opacity="0.6"/>
+    <path d="M35 15 C35 15 49 35 49 46 C49 54 42.7 60 35 60 C27.3 60 21 54 21 46 C21 35 35 15 35 15 Z" fill="url(#amberGold)"/>
+    <path d="M35 26 C35 26 43 38 43 46 C43 50.4 39.4 54 35 54 C30.6 54 27 50.4 27 46 C27 38 35 26 35 26 Z" fill="#FFFFFF" opacity="0.9"/>
+    <circle cx="35" cy="45" r="3.5" fill="#F59E0B"/>
+  </g>
+
+  <!-- Typography -->
+  <text x="95" y="44" font-family="'Vazirmatn', 'Segoe UI', Tahoma, sans-serif" font-size="28" font-weight="900" fill="#0B192C">پارس اکسیر</text>
+  <text x="95" y="64" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" letter-spacing="3" fill="#D97706">PARS EXIR</text>
+</svg>

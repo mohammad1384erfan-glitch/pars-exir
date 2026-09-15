@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
-import { SEOHead } from '@/components/seo/SEOHead';
+import { Link } from 'react-router-dom';
+import { SEOHead, buildBreadcrumbSchema, BASE_URL } from '@/components/seo/SEOHead';
 import { Section, PageLoader, ErrorState, Breadcrumb } from '@/components/ui';
 import { ProductCard } from '@/components/products/ProductCard';
 import { getActiveProducts } from '@/lib/queries';
@@ -21,14 +22,10 @@ export function ProductsPage() {
 
   useEffect(() => { load(); }, []);
 
-  const breadcrumbSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'BreadcrumbList',
-    itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'خانه', item: 'https://pars-exir.ir' },
-      { '@type': 'ListItem', position: 2, name: 'محصولات', item: 'https://pars-exir.ir/products' },
-    ],
-  };
+  const breadcrumbSchema = buildBreadcrumbSchema([
+    { name: 'خانه', url: BASE_URL },
+    { name: 'محصولات', url: `${BASE_URL}/products` },
+  ]);
 
   return (
     <>
@@ -91,11 +88,15 @@ export function ProductsPage() {
             <div className="mt-10 text-center space-y-3">
               <p className="text-charcoal-500 text-sm">
                 اطلاعات بیشتر:{' '}
-                <a href="/industrial-paraffin" className="text-navy-700 hover:underline">پارافین صنعتی چیست؟</a>
+                <Link to="/industrial-paraffin" className="text-navy-700 hover:underline">پارافین صنعتی چیست؟</Link>
                 {' | '}
-                <a href="/applications" className="text-navy-700 hover:underline">کاربردها</a>
+                <Link to="/paraffin-types" className="text-navy-700 hover:underline">انواع پارافین</Link>
                 {' | '}
-                <a href="/contact" className="text-navy-700 hover:underline">تماس با ما</a>
+                <Link to="/buying-guide" className="text-navy-700 hover:underline">راهنمای خرید</Link>
+                {' | '}
+                <Link to="/paraffin-price" className="text-navy-700 hover:underline">استعلام قیمت</Link>
+                {' | '}
+                <Link to="/contact" className="text-navy-700 hover:underline">تماس با ما</Link>
               </p>
             </div>
           </>

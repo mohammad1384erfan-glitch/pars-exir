@@ -13,6 +13,8 @@ import { ProductDetailPage } from '@/pages/ProductDetailPage';
 import { IndustrialParaffinPage } from '@/pages/IndustrialParaffinPage';
 import { ParaffinPricePage } from '@/pages/ParaffinPricePage';
 import { ParaffinKashanPage } from '@/pages/ParaffinKashanPage';
+import { ParaffinTypesPage } from '@/pages/ParaffinTypesPage';
+import { BuyingGuidePage } from '@/pages/BuyingGuidePage';
 import { ApplicationsPage } from '@/pages/ApplicationsPage';
 import { ArticlesPage } from '@/pages/ArticlesPage';
 import { ArticleDetailPage } from '@/pages/ArticleDetailPage';
@@ -44,6 +46,8 @@ export default function App() {
                 <Route path="/industrial-paraffin" element={<IndustrialParaffinPage />} />
                 <Route path="/paraffin-price" element={<ParaffinPricePage />} />
                 <Route path="/paraffin-kashan" element={<ParaffinKashanPage />} />
+                <Route path="/paraffin-types" element={<ParaffinTypesPage />} />
+                <Route path="/buying-guide" element={<BuyingGuidePage />} />
                 <Route path="/applications" element={<ApplicationsPage />} />
                 <Route path="/articles" element={<ArticlesPage />} />
                 <Route path="/articles/:slug" element={<ArticleDetailPage />} />

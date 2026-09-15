@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { useSettings } from '@/lib/settingsContext';
 import { PhoneIcon, WhatsAppIcon, TelegramIcon, MapPinIcon } from '@/components/ui';
+import { Logo } from '@/components/ui/Logo';
 
 export function Footer() {
   const { settings } = useSettings();
@@ -14,14 +15,8 @@ export function Footer() {
 
           {/* Brand */}
           <div className="lg:col-span-1">
-            <div className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-sm">PE</span>
-              </div>
-              <div>
-                <div className="text-white font-bold text-lg">{settings.business_name}</div>
-                <div className="text-navy-300 text-xs">PARS EXIR</div>
-              </div>
+            <div className="mb-4">
+              <Logo size="lg" theme="dark" />
             </div>
             <p className="text-navy-300 text-sm leading-relaxed mb-3">
               {settings.description}
@@ -37,9 +32,11 @@ export function Footer() {
             <h3 className="text-white font-bold mb-4 text-base">صفحات مهم</h3>
             <ul className="space-y-2">
               {[
-                { label: 'پارافین صنعتی', href: '/industrial-paraffin' },
+                { label: 'پارافین صنعتی چیست؟', href: '/industrial-paraffin' },
                 { label: 'محصولات', href: '/products' },
                 { label: 'قیمت پارافین', href: '/paraffin-price' },
+                { label: 'انواع پارافین صنعتی', href: '/paraffin-types' },
+                { label: 'راهنمای خرید پارافین', href: '/buying-guide' },
                 { label: 'پارافین در کاشان', href: '/paraffin-kashan' },
                 { label: 'کاربردها', href: '/applications' },
                 { label: 'مقالات', href: '/articles' },

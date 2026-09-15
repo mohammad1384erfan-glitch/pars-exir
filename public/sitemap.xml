@@ -48,9 +48,25 @@
   <!-- Local landing page -->
   <url>
     <loc>https://pars-exir.ir/paraffin-kashan</loc>
-    <lastmod>2026-08-23</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- Paraffin Types -->
+  <url>
+    <loc>https://pars-exir.ir/paraffin-types</loc>
+    <lastmod>2026-09-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- Buying Guide -->
+  <url>
+    <loc>https://pars-exir.ir/buying-guide</loc>
+    <lastmod>2026-09-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
   </url>
 
   <!-- Applications -->

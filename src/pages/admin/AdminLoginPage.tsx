@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { Navigate, useNavigate } from 'react-router-dom';
 import { useAuth } from '@/lib/authContext';
 import { PageLoader } from '@/components/ui';
+import { Logo } from '@/components/ui/Logo';
 
 export function AdminLoginPage() {
   const { signIn, session, loading } = useAuth();
@@ -39,11 +40,8 @@ export function AdminLoginPage() {
     <div className="min-h-screen bg-navy-950 flex items-center justify-center px-4" dir="rtl">
       <div className="w-full max-w-md">
         {/* Logo */}
-        <div className="text-center mb-8">
-          <div className="w-16 h-16 bg-white/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
-            <span className="text-white font-bold text-xl">PE</span>
-          </div>
-          <h1 className="text-white text-2xl font-bold">پارس اکسیر</h1>
+        <div className="text-center mb-8 flex flex-col items-center">
+          <Logo size="xl" theme="dark" className="mb-4" />
           <p className="text-navy-300 text-sm mt-1">ورود به پنل مدیریت</p>
         </div>
 

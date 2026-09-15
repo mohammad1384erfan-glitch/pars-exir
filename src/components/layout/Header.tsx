@@ -2,12 +2,14 @@ import { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { useSettings } from '@/lib/settingsContext';
 import { PhoneIcon } from '@/components/ui';
+import { Logo } from '@/components/ui/Logo';
 
 const NAV_ITEMS = [
   { label: 'خانه', href: '/' },
   { label: 'پارافین صنعتی', href: '/industrial-paraffin' },
   { label: 'محصولات', href: '/products' },
   { label: 'قیمت‌ها', href: '/paraffin-price' },
+  { label: 'انواع پارافین', href: '/paraffin-types' },
   { label: 'کاربردها', href: '/applications' },
   { label: 'مقالات', href: '/articles' },
   { label: 'درباره ما', href: '/about' },
@@ -28,15 +30,7 @@ export function Header() {
             {settings.logo_url ? (
               <img src={settings.logo_url} alt="لوگو پارس اکسیر" className="h-10 w-auto object-contain" />
             ) : (
-              <div className="flex items-center gap-2">
-                <div className="w-9 h-9 bg-navy-800 rounded-lg flex items-center justify-center">
-                  <span className="text-white font-bold text-sm">PE</span>
-                </div>
-                <div className="leading-tight">
-                  <div className="text-navy-900 font-bold text-base">{settings.business_name}</div>
-                  <div className="text-charcoal-400 text-xs">PARS EXIR</div>
-                </div>
-              </div>
+              <Logo size="md" theme="light" />
             )}
           </Link>
 
