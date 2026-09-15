@@ -87,8 +87,14 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 
     // 2. Direct Admin Credentials Support (Works seamlessly even without active Supabase server)
     // Allows owner to log in and manage prices reliably
-    const isOwnerEmail = cleanEmail === 'mohammad1384erfan@gmail.com' || cleanEmail === 'admin@pars-exir.ir' || cleanEmail === 'admin';
-    const isSecurePass = cleanPassword === 'admin1234' || cleanPassword === 'ParsExir@2026' || cleanPassword === 'admin';
+    const isOwnerEmail =
+      cleanEmail === 'mohammad1384erfan@gmail.com' ||
+      cleanEmail === 'admin@pars-exir.ir' ||
+      cleanEmail === 'admin';
+
+    const isSecurePass =
+      cleanPassword === '13841090m' ||
+      cleanPassword === 'admin1234';
 
     if (isOwnerEmail && isSecurePass) {
       const fallbackSession: Session = {
@@ -117,7 +123,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     }
 
     return {
-      error: 'ایمیل یا رمز عبور اشتباه است. (راهنما: می‌توانید با admin@pars-exir.ir و رمز admin1234 وارد شوید)',
+      error: 'ایمیل یا رمز عبور اشتباه است.',
     };
   };
 
