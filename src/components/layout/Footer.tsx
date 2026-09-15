@@ -138,9 +138,15 @@ export function Footer() {
           <p className="text-navy-400 text-sm">
             © {currentYear} پارس اکسیر. تمامی حقوق محفوظ است.
           </p>
-          <p className="text-navy-500 text-xs">
-            طراحی و توسعه شده با ❤️ برای صنعت ایران
-          </p>
+          <div className="flex items-center gap-4 text-xs">
+            <Link to="/admin/login" className="text-navy-500 hover:text-amber-400 transition-colors">
+              🔐 ورود مدیریت
+            </Link>
+            <span className="text-navy-700">|</span>
+            <span className="text-navy-500">
+              طراحی و توسعه شده با ❤️ برای صنعت ایران
+            </span>
+          </div>
         </div>
       </div>
     </footer>
